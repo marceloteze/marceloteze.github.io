@@ -1,0 +1,161 @@
+/* Simple reset css3 */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FIN Simple reset css3 */
+
+body{
+  background: rgb(224, 220, 220);
+}
+
+header, footer{
+  background: rgb(54, 50, 50);
+  color: #FFF;
+  text-align: center;
+  padding: 8px;
+  line-height: 1.5;
+}
+
+main{
+  max-width: 380px;
+  margin: 10px auto;
+  background: rgb(198, 212, 211);
+  border-radius: 50px;
+  padding: 25px;
+  text-align: center;
+}
+
+.titulo{
+  font-family: 'Inconsolata', monospace;
+  color: rgb(33, 18, 252);
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.subtitulo{
+  font-family: 'Inconsolata', monospace;
+  color: rgb(32, 9, 54);
+  font-size: 1.7em;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.foto-circular{
+  border-radius: 50%;
+  max-width: 80%;
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.iconos{
+  display: inline-flex;
+}
+
+.iconos li{
+  margin: 20px;
+}
+
+.fa{
+  font-size: 1.8em;
+  color: rgb(62, 6, 192);
+}
+
+.fa-times{
+  color: red;
+  margin: 0 70px;
+}
+
+.texto{
+  font-size: 1.2em;
+}
+
+.experiencia{
+  position: fixed;
+  max-width: 350px;
+  top: 160px;
+  left: 70px;
+  /*transform: translate(150px);*/
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.habilidades{
+  position: fixed;
+  max-width: 350px;
+  top: 160px;
+  right: 70px;
+  /*transform: translate(150px);*/
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+
+
+/* Clases columns*/
+.columns {
+  display: flex;
+}
+
+.column{
+  width: 45%;
+  border-radius: 20px;
+  background: rgb(245, 243, 243);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* Clases responsive*/
+
+@media (max-width: 858px){
+  main{
+    max-width: 340px;
+  }
+
+  #idhabilidades{
+    display: none;
+    margin: 15px;
+    width: 92%;
+    left: 0;
+  }
+
+  #idexperiencia{
+    display: none;
+    margin: 15px;
+    width: 92%;
+    left: 0;
+  }
+
+}
